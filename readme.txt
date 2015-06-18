@@ -15,8 +15,8 @@ Auto post your page, post, custom posts etc to your Facebook profile, fan page! 
 The posting process is fully automated and as easy as 1, 2, 3!
 
 * <strong>Configure your facebook account</strong> on which you want to auto post.
-* <strong>Define your content </strong>– configure which content you’d like to auto post (eg. posts,pages and custom post types, select post format, message format and category filters )
-* <strong>Relax </strong>– your every new content will be automatically posted on your facebook increasing the audence and making them viral.<br />
+* <strong>Define your content </strong> - configure which content you'd like to auto post (eg. posts,pages and custom post types, select post format, message format and category filters )
+* <strong>Relax </strong> - your every new content will be automatically posted on your facebook increasing the audence and making them viral.<br />
 Update your fanbase about your content, wide spread your content and make your content viral!
 
  
