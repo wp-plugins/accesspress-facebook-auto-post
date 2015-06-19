@@ -1,4 +1,4 @@
-=== AccessPress Facebook Auto Post ===
+﻿=== AccessPress Facebook Auto Post ===
 Contributors: Access Keys
 Tags: facebook auto post, facebook auto publish, auto post, facebook, auto publish, facebook fan page auto post, facebook publish, facebook profile auto post, social auto post
 Donate link: http://accesspressthemes.com/donation/
@@ -8,17 +8,16 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Auto post your page, post, custom posts etc to your Facebook profile, fan page! Easy one time configuration!
+Auto Publish wordpress posts/pages/custom post types to Facebook Profile and Fan pages.
 
 == Description ==
 <strong>AccessPress Facebook Auto Post</strong> is a FREE Facebook plugin for WordPress. You can use this to publish your site's posts,pages and custom post types to your facebook profile and fan pages as soon as you hit the publish button in your site.
 The posting process is fully automated and as easy as 1, 2, 3!
 
 * <strong>Configure your facebook account</strong> on which you want to auto post.
-* <strong>Define your content </strong> - configure which content you'd like to auto post (eg. posts,pages and custom post types, select post format, message format and category filters )
-* <strong>Relax </strong> - your every new content will be automatically posted on your facebook increasing the audence and making them viral.<br /><br/>
-
-<strong>Increase your fanbase for your content, wide spread your content and make your content viral!</strong>
+* <strong>Define your content </strong>– configure which content you’d like to auto post (eg. posts,pages and custom post types, select post format, message format and category filters )
+* <strong>Relax </strong>– your every new content will be automatically posted on your facebook increasing the audence and making them viral.<br />
+Update your fanbase about your content, wide spread your content and make your content viral!
 
  
 
@@ -39,6 +38,27 @@ The posting process is fully automated and as easy as 1, 2, 3!
         - Dedicated email, forum support
 * <strong>Free updates</strong>
         - Get free updates for lifetime.
+
+= Premium Features: =
+
+	★ Unlimited Account Support(Configure as many accouns of each as
+	 you want)
+
+	★ Facebook Auto Post
+
+	★ Twitter Auto Post
+
+	★ LinkedIn Auto Post
+
+	★ Tumblr Auto Post
+
+	★ Super support – get support via email/support forum/online chat 
+	
+	★ And many more...
+
+
+= Premium Upgrade = 
+* For premium upgrade, please go [here](http://codecanyon.net/item/accesspress-social-auto-post/11752265?ref=AccessKeys)
         
 = Some Useful Links =
 * <strong>Support Email</strong>: support@accesspressthemes.com
@@ -85,7 +105,6 @@ Once you install the plugin , you can check some general documentation about how
 
 = 1.0.0 =
 * Plugin submitted to http://wordpress.org for review and approval
-* Plugin approved and committed to wordpress.org repository
 
 
 
