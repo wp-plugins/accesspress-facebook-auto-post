@@ -8,7 +8,7 @@
             foreach ($post_types as $post_type) {
                 $post_type_obj = get_post_type_object($post_type);
                 ?>
-                <label class="asap-full-width"><input type="checkbox" name="account_details[post_types][]" value="<?php echo $post_type; ?>" <?php echo (is_array($account_details['post_types']) && in_array($post_type, $account_details['post_types'])) ? 'checked="checked"' : ''; ?>/><?php echo $post_type_obj->labels->name; ?></label>
+                <label class="asap-full-width"><input type="checkbox" name="account_details[post_types][]" value="<?php echo $post_type; ?>" <?php echo (isset($account_details['post_types']) && is_array($account_details['post_types']) && in_array($post_type, $account_details['post_types'])) ? 'checked="checked"' : ''; ?>/><?php echo $post_type_obj->labels->name; ?></label>
             <?php }
             ?>
         </div>
