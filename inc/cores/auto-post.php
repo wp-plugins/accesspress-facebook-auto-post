@@ -145,7 +145,7 @@ if (in_array($post_type, $account_details['post_types']) && $account_extra_detai
                 $attachment = array('message' => $message_format,
                     'access_token' => $access_token);
             } else {  //For attaching the blog post along with the text message
-                if (post_image == 'featured_image') {
+                if ($post_image == 'featured_image') {
                     if (has_post_thumbnail($id)) {
                         $image_id = get_post_thumbnail_id($id);
                         $image_url = wp_get_attachment_image_src($image_id, 'large', true);

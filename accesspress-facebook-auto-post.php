@@ -4,7 +4,7 @@ defined('ABSPATH') or die('No script kiddies please!');
  * Plugin Name: AccessPress Facebook Auto Post
  * Plugin URI: https://accesspressthemes.com/wordpress-plugins/accesspress-facebook-auto-post/
  * Description: A plugin to publish your wordpress posts to facebook profile and fan pages
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: AccessPress Themes
  * Author URI: http://accesspressthemes.com
  * Text Domain: afap
