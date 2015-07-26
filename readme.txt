@@ -4,7 +4,7 @@ Tags: facebook auto post, facebook auto publish, auto post, facebook, auto publi
 Donate link: http://accesspressthemes.com/donation/
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,10 @@ Once you install the plugin , you can check some general documentation about how
 
 
 == Changelog ==
+= 1.0.5 = 
+* Fixed small bug regarding html tags posting 
+* Removed printed array in authorization process 
+
 = 1.0.4 = 
 * Checked API class exists with PHP to prevent conflict 
 

@@ -3,7 +3,7 @@
 //die('123');
 $code = $_GET['code'];
 $account_details = get_option('afap_settings');
-$this->print_array($account_details);
+//$this->print_array($account_details);
 $app_id = $account_details['application_id'];
 $app_secret = $account_details['application_secret'];
 $redirect_url = admin_url('admin-post.php?action=afap_callback_authorize');
