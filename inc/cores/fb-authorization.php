@@ -1,5 +1,4 @@
-<?php
-
+<?php defined('ABSPATH') or die('No script kiddies please!');
 $account_details = get_option('afap_settings');
 //$this->print_array($account_details);die();
 $app_id = $account_details['application_id'];

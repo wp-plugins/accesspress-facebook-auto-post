@@ -1,5 +1,5 @@
 <?php
-
+defined('ABSPATH') or die('No script kiddies please!');
 $account_details = $_POST['account_details'];
 $account_details['post_types'] = isset($account_details['post_types'])?$account_details['post_types']:array();
 $account_details['auto_publish'] = isset($account_details['auto_publish'])?$account_details['auto_publish']:0;

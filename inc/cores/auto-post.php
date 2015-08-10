@@ -1,4 +1,5 @@
 <?php
+defined('ABSPATH') or die('No script kiddies please!');
 
 $id = $post->ID;
 $account_details = get_option('afap_settings');

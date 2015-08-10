@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') or die('No script kiddies please!');?>
 <div class="asap-header">
     <h1>AccessPress Facebook Auto Post</h1>
     <span class="asap-version">V <?php echo AFAP_VERSION; ?></span>

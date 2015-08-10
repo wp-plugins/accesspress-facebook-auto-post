@@ -1,5 +1,5 @@
 <?php
-
+defined('ABSPATH') or die('No script kiddies please!');
 //die('123');
 $code = $_GET['code'];
 $account_details = get_option('afap_settings');
