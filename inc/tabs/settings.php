@@ -38,12 +38,12 @@
 
                 <div class="asap-network-field-wrap">
                     <label><?php _e('Application ID', AFAP_TD); ?></label>
-                    <div class="asap-network-field"><input type="text" name="account_details[application_id]" value="<?php echo isset($account_details['application_id']) ? $account_details['application_id'] : ''; ?>"/></div>
+                    <div class="asap-network-field"><input type="text" name="account_details[application_id]" value="<?php echo isset($account_details['application_id']) ? esc_attr($account_details['application_id']) : ''; ?>"/></div>
                 </div>
                 <div class="asap-network-field-wrap">
                     <label><?php _e('Application Secret', AFAP_TD); ?></label>
                     <div class="asap-network-field">
-                        <input type="text" name="account_details[application_secret]" value="<?php echo isset($account_details['application_secret']) ? $account_details['application_secret'] : ''; ?>"/>
+                        <input type="text" name="account_details[application_secret]" value="<?php echo isset($account_details['application_secret']) ? esc_attr($account_details['application_secret']) : ''; ?>"/>
                         <div class="asap-field-note">
                             <?php
                             $site_url = site_url();
@@ -55,7 +55,7 @@
                 <div class="asap-network-field-wrap">
                     <label><?php _e('Facebook User ID', AFAP_TD); ?></label>
                     <div class="asap-network-field">
-                        <input type="text" name="account_details[facebook_user_id]" value="<?php echo isset($account_details['facebook_user_id']) ? $account_details['facebook_user_id'] : ''; ?>"/>
+                        <input type="text" name="account_details[facebook_user_id]" value="<?php echo isset($account_details['facebook_user_id']) ? esc_attr($account_details['facebook_user_id']) : ''; ?>"/>
                         <div class="asap-field-note">
                             <?php _e('Please visit <a href="http://findmyfacebookid.com/" target="_blank">here</a> to get your facebook ID', AFAP_TD); ?>
                         </div>
@@ -97,7 +97,7 @@
                 <div class="asap-network-field-wrap asap-custom-image">
                     <label><?php _e('Custom Image URL', AFAP_TD); ?></label>
                     <div class="asap-network-field">
-                        <input type="text" name="account_details[custom_image_url]" placeholder="<?php _e('Enter URL of the image here', AFAP_TD); ?>" value="<?php echo $account_details['custom_image_url'] ?>"/>
+                        <input type="text" name="account_details[custom_image_url]" placeholder="<?php _e('Enter URL of the image here', AFAP_TD); ?>" value="<?php echo esc_attr($account_details['custom_image_url']) ?>"/>
                     </div>
                 </div>
                 <div class="asap-network-field-wrap">
