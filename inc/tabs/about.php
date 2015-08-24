@@ -29,6 +29,7 @@
             <li><a href="https://www.pinterest.com/accesspresswp/" class="pin"><i class="fa fa-pinterest"> </i><span> Follow us on <span class="bold"> Pinterest </span> </span></a></li>
         </ul>
     </div>
+    
 
 
 </div>

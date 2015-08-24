@@ -22,6 +22,7 @@
                     <li class="asap-tab <?php if ($active_tab == 'logs') { ?>asap-active-tab<?php } ?>" id="asap-tab-logs"><?php _e('Logs', AFAP_TD); ?></li>
                     <li class="asap-tab <?php if ($active_tab == 'how') { ?>asap-active-tab<?php } ?>" id="asap-tab-how"><?php _e('How To Use', AFAP_TD); ?></li>
                     <li class="asap-tab <?php if ($active_tab == 'about') { ?>asap-active-tab<?php } ?>" id="asap-tab-about"><?php _e('About', AFAP_TD); ?></li>
+                    <li class="asap-tab" id="asap-tab-upgrade"><?php _e('Upgrade',AFAP_TD);?></li>
                 </ul>
                 <?php
                 /**
@@ -43,6 +44,11 @@
                  * About Section
                  */
                 include_once('tabs/about.php');
+                
+                 /**
+                 * Upgrade Section
+                 */
+                include_once('tabs/upgrade.php');
                 ?>
 
 

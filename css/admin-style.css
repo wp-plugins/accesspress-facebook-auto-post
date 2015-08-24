@@ -361,3 +361,45 @@ span.asap-version {
     padding: 10px;
     font-size: 14px;
 }
+
+/** Upgrade Section **/
+.intro ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+div#asap-section-upgrade h3 {
+    background-color: #3B5998;
+    color: white;
+    padding: 10px;
+}
+.intro p i {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #3B5998;
+    color: white;
+    padding: 5px 10px;
+    width: 100%;
+    display: inline-block;
+}
+a.upgrade-action-btn {
+    background-color: #3B5998;
+    color: white;
+    border: 2px solid #FFF;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+.upgrade-actions {
+    margin: 40px 0;
+}
+a.upgrade-action-btn:hover {
+    color: #3B5998;
+    background-color: #fff;
+    border-color: #3B5998;
+}
+ul.price-wrap {
+    font-size: 16px;
+    line-height: 30px;
+}
