@@ -4,7 +4,7 @@ defined('ABSPATH') or die('No script kiddies please!');
  * Plugin Name: AccessPress Facebook Auto Post
  * Plugin URI: https://accesspressthemes.com/wordpress-plugins/accesspress-facebook-auto-post/
  * Description: A plugin to publish your wordpress posts to facebook profile and fan pages
- * Version: 1.0.9
+ * Version: 1.1.0
  * Author: AccessPress Themes
  * Author URI: http://accesspressthemes.com
  * Text Domain: afap
@@ -25,7 +25,7 @@ if (!defined('AFAP_JS_DIR')) {
     define('AFAP_JS_DIR', plugin_dir_url(__FILE__) . '/js');
 }
 if (!defined('AFAP_VERSION')) {
-    define('AFAP_VERSION', '1.0.9');
+    define('AFAP_VERSION', '1.1.0');
 }
 if (!defined('AFAP_TD')) {
     define('AFAP_TD', 'afap');
@@ -154,7 +154,7 @@ if (!class_exists('AFAP_Class')) {
          * Registers Admin Menu
          */
         function afap_admin_menu() {
-            add_menu_page(__('AccessPress Facebook Auto Post', AFAP_TD), __('AccessPress Facebook Auto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post', AFAP_TD), 'manage_options', 'afap', array($this, 'plugin_settings'));
+            add_menu_page(__('AccessPress Facebook Auto Post', AFAP_TD), __('AccessPress Facebook Auto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post', AFAP_TD), 'manage_options', 'afap', array($this, 'plugin_settings'),'dashicons-facebook-alt');
         }
 
         /**
