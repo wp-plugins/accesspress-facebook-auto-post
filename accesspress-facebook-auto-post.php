@@ -4,10 +4,10 @@ defined('ABSPATH') or die('No script kiddies please!');
  * Plugin Name: AccessPress Facebook Auto Post
  * Plugin URI: https://accesspressthemes.com/wordpress-plugins/accesspress-facebook-auto-post/
  * Description: A plugin to publish your wordpress posts to facebook profile and fan pages
- * Version: 1.1.0
+ * Version: 1.1.6
  * Author: AccessPress Themes
  * Author URI: http://accesspressthemes.com
- * Text Domain: afap
+ * Text Domain: accesspress-facebook-auto-post
  * Domain Path: /languages/
  * License:     GPL2
 
@@ -25,10 +25,10 @@ if (!defined('AFAP_JS_DIR')) {
     define('AFAP_JS_DIR', plugin_dir_url(__FILE__) . '/js');
 }
 if (!defined('AFAP_VERSION')) {
-    define('AFAP_VERSION', '1.1.0');
+    define('AFAP_VERSION', '1.1.6');
 }
 if (!defined('AFAP_TD')) {
-    define('AFAP_TD', 'afap');
+    define('AFAP_TD', 'accesspress-facebook-auto-post');
 }
 if (!defined('AFAP_PLUGIN_FILE')) {
     define('AFAP_PLUGIN_FILE', __FILE__);
@@ -154,7 +154,7 @@ if (!class_exists('AFAP_Class')) {
          * Registers Admin Menu
          */
         function afap_admin_menu() {
-            add_menu_page(__('AccessPress Facebook Auto Post', AFAP_TD), __('AccessPress Facebook Auto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post', AFAP_TD), 'manage_options', 'afap', array($this, 'plugin_settings'),'dashicons-facebook-alt');
+            add_menu_page(__('AccessPress Facebook Auto Post', 'accesspress-facebook-auto-post'), __('AccessPress Facebook Auto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post', 'accesspress-facebook-auto-post'), 'manage_options', 'afap', array($this, 'plugin_settings'),'dashicons-facebook-alt');
         }
 
         /**
@@ -261,7 +261,7 @@ if (!class_exists('AFAP_Class')) {
                 global $wpdb;
                 $log_table_name = $wpdb->prefix . 'afap_logs';
                 $wpdb->query("TRUNCATE TABLE $log_table_name");
-                $_SESSION['afap_message'] = __('Logs cleared successfully.', AFAP_TD);
+                $_SESSION['afap_message'] = __('Logs cleared successfully.', 'accesspress-facebook-auto-post');
                 wp_redirect(admin_url('admin.php?page=afap&tab=logs'));
                 exit();
             } else {
@@ -279,7 +279,7 @@ if (!class_exists('AFAP_Class')) {
                 global $wpdb;
                 $table_name = $wpdb->prefix . 'afap_logs';
                 $wpdb->delete($table_name, array('log_id' => $log_id), array('%d'));
-                $_SESSION['afap_message'] = __('Log Deleted Successfully', AFAP_TD);
+                $_SESSION['afap_message'] = __('Log Deleted Successfully', 'accesspress-facebook-auto-post');
                 wp_redirect(admin_url('admin.php?page=afap'));
             } else {
                 die('No script kiddies please!');
@@ -292,7 +292,7 @@ if (!class_exists('AFAP_Class')) {
         function add_afap_meta_box($post_type) {
             add_meta_box(
                     'afap_meta_box'
-                    , __('AccessPress Facebook Auto Post', AFAP_TD)
+                    , __('AccessPress Facebook Auto Post', 'accesspress-facebook-auto-post')
                     , array($this, 'render_meta_box_content')
                     , $post_type
                     , 'side'
@@ -315,11 +315,11 @@ if (!class_exists('AFAP_Class')) {
 
             // Display the form, using the current value.
             ?>
-            <label for="afap_auto_post"><?php _e('Enable Auto Post', AFAP_TD); ?></label>
+            <label for="afap_auto_post"><?php _e('Enable Auto Post', 'accesspress-facebook-auto-post'); ?></label>
             <p>
                 <select name="afap_auto_post">
-                    <option value="yes" <?php selected($auto_post, 'yes'); ?>><?php _e('Yes', AFAP_TD); ?></option>
-                    <option value="no" <?php selected($auto_post, 'no'); ?>><?php _e('No', AFAP_TD); ?></option>
+                    <option value="yes" <?php selected($auto_post, 'yes'); ?>><?php _e('Yes', 'accesspress-facebook-auto-post'); ?></option>
+                    <option value="no" <?php selected($auto_post, 'no'); ?>><?php _e('No', 'accesspress-facebook-auto-post'); ?></option>
                 </select>
             </p>
             <?php
@@ -378,7 +378,7 @@ if (!class_exists('AFAP_Class')) {
             $afap_extra_settings = array('authorize_status'=>0);
             update_option('afap_extra_settings', $afap_extra_settings);
             update_option('afap_settings', $afap_settings);
-            $_SESSION['afap_message'] = __('Default Settings Restored Successfully',AFAP_TD);
+            $_SESSION['afap_message'] = __('Default Settings Restored Successfully','accesspress-facebook-auto-post');
             wp_redirect('admin.php?page=afap');
             exit();
         }

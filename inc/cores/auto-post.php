@@ -113,6 +113,7 @@ if (in_array($post_type, $account_details['post_types']) && $account_extra_detai
     $post_title = $post->post_title;
     $post_content = strip_tags($post->post_content);
     $post_content = str_replace('&nbsp;','',$post_content);
+    $post_content = strip_shortcodes($post_content);
     $post_excerpt = $post->post_excerpt;
     $post_link = get_the_permalink($id);
     $post_author_id = $post->post_author;
@@ -180,7 +181,7 @@ if (in_array($post_type, $account_details['post_types']) && $account_extra_detai
                  * Logged as success
                  * */
                 $log_status = 1;
-                $log_details = __('Posted Successfully on ', AFAP_TD) . $page_name;
+                $log_details = __('Posted Successfully on ', 'accesspress-facebook-auto-post') . $page_name;
             } catch (Exception $e) {
                 /**
                  * Logged as failure

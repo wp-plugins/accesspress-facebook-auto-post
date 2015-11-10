@@ -44,7 +44,7 @@ if ($body != '') {
         $account_extra_details['pages'] = $pages;
         $account_extra_details['access_token'] = $access_token;
         update_option('afap_extra_settings', $account_extra_details);
-        $_SESSION['afap_message'] = __('Account authorized successfully.Now you can go for posting.', AFAP_TD);
+        $_SESSION['afap_message'] = __('Account authorized successfully.Now you can go for posting.', 'accesspress-facebook-auto-post');
         $redirect_url = admin_url() . 'admin.php?page=afap';
         // die($redirect_url);
         wp_redirect($redirect_url);

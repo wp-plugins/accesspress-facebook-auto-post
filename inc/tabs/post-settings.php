@@ -1,7 +1,7 @@
-<h4 class="asap-network-title"><?php _e('Post Settings', AFAP_TD); ?></h4>
+<h4 class="asap-network-title"><?php _e('Post Settings', 'accesspress-facebook-auto-post'); ?></h4>
 <div class="asap-network-inner-wrap">
     <div class="asap-network-field-wrap">
-        <label><?php _e('Enable Auto Publish For:', AFAP_TD); ?></label>
+        <label><?php _e('Enable Auto Publish For:', 'accesspress-facebook-auto-post'); ?></label>
         <div class="asap-network-field">
             <?php
             $post_types = $this->get_registered_post_types();
@@ -15,11 +15,11 @@
     </div>
 
     <div class="asap-network-field-wrap">
-        <label><?php _e('Categories for Auto Post', AFAP_TD); ?></label>
+        <label><?php _e('Categories for Auto Post', 'accesspress-facebook-auto-post'); ?></label>
         <div class="asap-network-field">
             <select name="account_details[category][]" multiple="multiple">
                 <?php $category = isset($account_details['category']) ? $account_details['category'] : array(); ?>
-                <option value="all" <?php echo (in_array('all', $category)) ? 'selected="selected"' : ''; ?>><?php _e('All', AFAP_TD); ?></option>
+                <option value="all" <?php echo (in_array('all', $category)) ? 'selected="selected"' : ''; ?>><?php _e('All', 'accesspress-facebook-auto-post'); ?></option>
                 <?php
                 $taxonomies = get_taxonomies();
                 unset($taxonomies['nav_menu']);
@@ -46,14 +46,14 @@
                 ?>
             </select>
             <div class="asap-field-note">
-                <?php _e('Note:Please use command or control key to select multiple options.Not selecting any of the option will be considered as <strong>All</strong> selected.', AFAP_TD); ?>
+                <?php _e('Note:Please use command or control key to select multiple options.Not selecting any of the option will be considered as <strong>All</strong> selected.', 'accesspress-facebook-auto-post'); ?>
             </div>
         </div>
     </div>
 </div>
 <div class="asap-network-field-wrap">
     <div class="asap-network-field">
-        <input type="submit" name="edit_submit" value="<?php _e('Save Settings', AFAP_TD); ?>"/>
-        <a href="<?php echo admin_url('admin-post.php?action=afap_restore_settings'); ?>" onclick="return confirm('<?php _e('Are you sure you want to restore the default settings?',AFAP_TD);?>')"><input type="button" value="<?php _e('Restore Default Settings', AFAP_TD); ?>"/></a>
+        <input type="submit" name="edit_submit" value="<?php _e('Save Settings', 'accesspress-facebook-auto-post'); ?>"/>
+        <a href="<?php echo admin_url('admin-post.php?action=afap_restore_settings'); ?>" onclick="return confirm('<?php _e('Are you sure you want to restore the default settings?','accesspress-facebook-auto-post');?>')"><input type="button" value="<?php _e('Restore Default Settings', 'accesspress-facebook-auto-post'); ?>"/></a>
     </div>
 </div>
