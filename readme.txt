@@ -4,7 +4,7 @@ Tags: facebook auto post, facebook auto publish, auto post, facebook, auto publi
 Donate link: http://accesspressthemes.com/donation/
 Requires at least: 3.8
 Tested up to: 4.3
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,9 @@ Once you install the plugin , you can check some general documentation about how
 
 
 == Changelog ==
+= 1.1.7 = 
+* Done some code cleanup 
+
 = 1.1.6 = 
 * Done some modifications in logs section 
 
